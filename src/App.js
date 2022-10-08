@@ -14,14 +14,9 @@ function App() {
     setCartIsShown(false);
   };
 
-  return (
-    <CartProvider>
-      {cartIsShown && <Cart onClose={hideCartHandler} />}
+  return (<div>
       <Header onShowCart={showCartHandler} />
-      <main>
-        
-      </main>
-    </CartProvider>
+      </div>
   );
 }
 
